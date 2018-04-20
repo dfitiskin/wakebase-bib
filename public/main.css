@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  background-color: #00BCD4;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.current {
+  cursor: default;
+  color: #ccc;
+}
+
+a,
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+  position: relative;
+  display: inline-block;
+  line-height: 52px;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 16px;
+  color: #FF1744;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 60px;
+}
+
+.main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 52px;
+  z-index: 1000;
+  background-color: #fafafa;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.gen-list {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gen-card {
+  margin: 8px;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #fafafa;
+  height: 35%;
+  width: 270px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.gen-card-number {
+  text-align: center;
+  font-size: 124px;
+  color: #000;
+  margin: 0;
+  padding: 8px 16px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.gen-card-info {
+  padding: 8px 16px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gen-card-range {
+  color: #ccc;
+  font-size: 0.8em;
+}
+
+.gen-card-awailable {
+  display: block;
+  width: 1.3em;
+  height: 1.3em;
+  text-align: center;
+  line-height: 1.3em;
+  border-radius: 50%;
+  background-color: #FF1744;
+  color: #fafafa;
+  margin: 0 0.2em;
+}
+
+.gen-card-panel {
+  padding: 0;
+  border-top: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  height: 52px;
+}
+
+form {
+  max-width: 300px;
+  margin: 16px auto;
+  padding: 16px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form > button {
+  padding-left: 0;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  background-color: #fff;
+  color: #2196f3;
+  font-size: 13px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+  padding: 4px 0 0;
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-bottom: solid 1px #c8c8c8;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  z-index: 2;
+  line-height: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3c3c3c;
+}
+
+input:focus {
+  border-bottom: solid 1px #c8c8c8;
+}
+
+input[type=number] {
+  display: inline-block;
+  max-width: 2em;
+}
+
+.gen-options h1 {
+  max-width: 600px;
+  margin: 1em auto;
+}
+
+.gen-info {
+  max-width: 632px;
+  margin: 1em auto;
+  background-color: #fafafa;
+  padding: 16px 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.gen-info dl {
+  padding: 0 16px;
+  display: flex;
+}
+
+.gen-info dd {
+  color: #ccc;
+  font-size: 0.8em;
+}
+
+.gen-options-panel {
+  max-width: 600px;
+  margin: 1em auto;
+  background-color: #fafafa;
+  padding: 16px;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.bib-list {
+  max-width: 600px;
+  margin: 1em auto;
+  background-color: #fafafa;
+  padding: 16px;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.bib-list h2 {
+  margin: 0 0 16px;
+  color: #FF1744;
+  font-size: 18px;
+}
+
+.bib-list ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bib-list ul li {
+  margin-right: 1em;
+}
+
+.bib-list ul li:hover {
+  text-decoration: line-through;
+}
